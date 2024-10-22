@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/**",
+                "/usr/include/eigen3/**",
+                "/usr/include/x86_64-linux-gnu/**",
+                "/usr/local/include/**",
+                "/opt/ros/noetic/include/**",
+                "${workspaceFolder}/src/easy_image_undistort/include/**",
+                "${workspaceFolder}/devel/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

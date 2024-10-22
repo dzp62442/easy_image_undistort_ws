@@ -1,3 +1,7 @@
+vision_opencv/
+vision_opencv-noetic/
+*.Identifier
+
 devel/
 logs/
 build/
