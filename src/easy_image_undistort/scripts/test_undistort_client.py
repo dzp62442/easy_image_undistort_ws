@@ -37,6 +37,7 @@ def image_service_client():
 
             # 从响应中获取图像
             response_image = bridge.imgmsg_to_cv2(response.response_image, desired_encoding="bgr8")
+            print(response_image.shape)
             cv2.imwrite(os.path.join(UNDISTORT_DATA_PATH, img_name), response_image)
 
         except rospy.ServiceException as e:

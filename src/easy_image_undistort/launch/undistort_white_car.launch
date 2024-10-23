@@ -1,10 +1,10 @@
 <launch>
 
 <!--  修改此处参数  -->
-<arg name="input_camera_namespace" default="cam0" />
+<arg name="input_camera_namespace" default="cam1" />
 <arg name="output_camera_info_source" default="auto_generated" />
 <arg name="scale" default="1.0" />
-<arg name="calib_path" default="/home/dzp62442/Projects/white_car_demo/calib-data.yaml"/>
+<arg name="calib_path" default="$(find easy_image_undistort)/config/white-car-calib-data.yaml"/>
 
   <node name="easy_image_undistort_node" pkg="easy_image_undistort" type="easy_image_undistort_node">
     <param name="input_camera_info_from_ros_params" value = "true"/>
