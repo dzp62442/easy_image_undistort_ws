@@ -1,0 +1,17 @@
+<launch>
+
+<!--  修改此处参数  -->
+<arg name="input_camera_namespace" default="cam0" />
+<arg name="output_camera_info_source" default="auto_generated" />
+<arg name="scale" default="1.0" />
+<arg name="calib_path" default="/home/dzp62442/Projects/white_car_demo/calib-data.yaml"/>
+
+  <node name="easy_image_undistort_node" pkg="easy_image_undistort" type="easy_image_undistort_node">
+    <param name="input_camera_info_from_ros_params" value = "true"/>
+    <param name="input_camera_namespace" value="$(arg input_camera_namespace)"/>
+    <param name="output_camera_info_source" value="$(arg output_camera_info_source)"/>
+    <param name="scale" value="$(arg scale)"/>
+    <rosparam file="$(arg calib_path)"/>
+  </node>
+
+</launch>
